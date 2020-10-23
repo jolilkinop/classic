@@ -142,10 +142,9 @@ body{
 }
 
 .adventising {
-    display: flex;
-    position: relative;
-    height: 522px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 10fr 2fr;
+    grid-template-rows: 522px;
 }
 
 .adventising_button-left,
@@ -163,15 +162,15 @@ body{
 }
 
 .adventising_button-right {
-    position: absolute;
-    right: 0;
-    top: 60%;
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 30vh;
 }
 
 .adventising_button-left {
-    position: absolute;
-    left: 0;
-    top: 60%;
+    justify-self: start;
+    align-self: end;
+    margin-bottom: 30vh;
 }
 
 .advertising_card {
