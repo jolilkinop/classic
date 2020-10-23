@@ -1,0 +1,40 @@
+@media(min-width: 1365px) {
+    .wrap {
+        width: 80vw;
+        max-width: 1380px;
+        margin: 0 auto;
+    }
+    
+    .main {
+        height: 430px;
+    }
+
+    .advertising_card {
+        width: 70vw;
+    }
+
+    .contacts_ledy {
+        width: 80vw;
+    }
+
+    .review-clients_background {
+        width: 990px;
+        height: 360px;
+    }
+
+    .rewiew-clients_img {
+        width: 936px;
+    }
+
+    .butterfly-one {
+        right: 2vw;
+    }
+    
+    .butterfly-two {
+        right: 5vw;
+    }
+
+    .branch {
+        left: 0;
+    }
+}

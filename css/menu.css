@@ -1,0 +1,21 @@
+.menu-nav {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    margin-top: 47px;
+    margin-left: 67px;
+}
+
+.menu-nav_info-text {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    color: #000000;
+    margin-right: 14px;
+}
+
+.menu-nav_active {
+    color: gray;
+}

@@ -1,0 +1,336 @@
+.backet-product {
+    margin-top: 49px;
+}
+
+.product-client {
+    display: flex;
+    position: relative;
+}
+
+.product-client_delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.product-client_img {
+    margin: 0 66px;
+}
+
+.product-client_card {
+    width: 330px;
+    height: 400px;
+}
+
+.product-client_info {
+    margin-right: 555px;
+}
+
+.product-client_title {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.product-client_price {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 54px;
+    color: #D05147;
+    margin-top: 49px;
+}
+
+.product-client_size {
+    border: 3px solid #C8E5D4;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    color: #000000;
+    margin-top: 49px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-client_btn {
+    background: transparent;
+    border: none;
+}
+
+.line {
+    margin: 42px 0;
+    background: #E5E5E5;
+    width: 100%;
+    height: 2px;
+    margin-left: 66px;
+}
+
+.btn-dispatch {
+    display: flex;
+    justify-content: center;
+    margin-top: 139px;
+}
+
+.btn-dispatch_form-link {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 31px;
+    color: #000000;
+    background: #C8E5D4;
+    border: 1px solid #66977A;
+    box-sizing: border-box;
+    border-radius: 32px;
+    width: 342px;
+    height: 69px;
+}
+
+.btn-dispatch_form-link:hover {
+    background: #66977A;
+    border-radius: 32px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.btn-dispatch_form-link:active {
+    border: 1px solid #FD9C95;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 31px;
+    color: #000000;
+}
+
+/* Order popup start */
+.order {
+    position: relative;
+    display: none;
+}
+
+.order_popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_popup .order_content {
+    padding:10px;
+    border-radius:45px;
+    box-shadow: 0px 0px 10px #000;
+    background: #FFFFFF;
+    width: 1015px;
+    height: 749px;
+    position: relative;
+}
+
+.order_content  {
+    display: flex;
+    justify-content: center;
+}
+
+.order_btn {
+    position: absolute;
+    top: 50px;
+    right: 56px;
+    background: transparent;
+    border: none;
+}
+
+.order_title {
+    margin-top: 99px;
+    display: flex;
+    justify-content: center;
+}
+
+.order_form {
+    margin: 72px auto;
+    display: block;
+}
+
+.order_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_block-mod {
+    align-items: center;
+}
+
+.order_text {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.order_input {
+    background: #FFFFFF;
+    border: 2px solid #C8E5D4;
+    box-sizing: border-box;
+    border-radius: 17px;
+    width: 526px;
+    height: 36px;
+    margin-bottom: 58px;
+    
+}
+
+.order_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_adress-bolt {
+    width: 326px;
+    height: 36px;
+}
+
+.order_adress-min {
+    width: 87px;
+    height: 36px;
+}
+
+.order_checkbox {
+    width: 31px;
+    height: 31px;
+    margin-right: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media(max-width: 1200px) {
+    .item-card_product {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .btn-dispatch_form {
+        width: 375px;
+        height: 50px;
+    }
+
+    .product-client_card {
+        height: 340px;
+    }
+
+    .product-client_info {
+        margin-right: 270px;
+    }
+}
+
+@media(max-width: 780px) {
+    .menu-nav_info-text {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        color: #000000;
+    }
+
+    .product-client_card {
+        width: 62px;
+        height: 75px;
+    }
+
+    .product-client_title {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        color: #000000;
+    }
+
+    .product-client_price {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        color: #D05147;
+    }
+
+    .product-client_size {
+        width: 15px;
+        height: 15px;
+        border: 1.5px solid #C8E5D4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 10px;
+        color: #000000;
+    }
+
+    .close {
+        width: 5px;
+        height: 5px;
+    }
+
+    .btn-dispatch_form-link {
+        width: 106px;
+        height: 22px;
+        background: #C8E5D4;
+        border: 1px solid #66977A;
+        border-radius: 32px;
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 10px;
+        color: #000000;
+    }
+
+    .btn-dispatch_form-link:hover {
+        width: 106px;
+        height: 22px;
+        border-radius: 32px;
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .btn-dispatch_form-link:active {
+        width: 106px;
+        height: 22px;
+        border-radius: 32px;
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 10px;
+    }
+}
