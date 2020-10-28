@@ -5,7 +5,8 @@ const orderBtn = document.querySelector(".order_btn");
 const orderCheckbox = document.querySelector(".order_checkbox");
 const thanks = document.querySelector(".thanks");
 const thanksBackCall = document.querySelector(".thanks_back-call");
-const thanksClose =document.querySelector(".thanks_close");
+const thanksClose = document.querySelector(".thanks_close");
+
 
 // Function
 function openForm () {
@@ -23,6 +24,7 @@ function openDispatch () {
 function closeDispatch () {
     thanks.classList.remove('active')
 }
+
 
 // Events
 btnDispatchFormLink.addEventListener('click', openForm)
