@@ -894,6 +894,7 @@ body{
     }
 
 
+
     .popup-menu_link {
         font-family: Comfortaa;
         font-style: normal;
@@ -1141,17 +1142,6 @@ body{
         width: 674px;
     }
 
-    .order_input {
-        width: 400px;
-    }
-
-    .order_title {
-        font-family: Comfortaa;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 13px;
-        color: #000000;
-    }
+    
 }
 
