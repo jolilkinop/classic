@@ -40,15 +40,15 @@ function closeDispatchForm () {
 // Слайдер
 index = 0;
 
-const activeAdvertising = n => {
-    for(advImg of advertisingImg) {
-        advImg.classList.remove('active');
-    }
-    advertisingImg[n].classList.add("active");
-}
+// const activeAdvertising = n => {
+//     console.log(n);
+//     for(advImg of advertisingImg) {
+//         advImg.classList.remove('active');
+//     }
+//     advertisingImg[n].classList.add("active");
+// }
 
 const activeSliderBtn = n => {
-    console.log(n);
     for(advSlideBtn of adventisingSliderBtns) {
         advSlideBtn.classList.remove("active");
     }
@@ -58,11 +58,11 @@ const activeSliderBtn = n => {
 const adventisingNext = () => {
     if(index == advertisingImg.length - 1) {
         index = 0;
-        activeAdvertising(index);
+        // activeAdvertising(index);
         activeSliderBtn(index);
     } else {
         index++;
-        activeAdvertising(index);
+        // activeAdvertising(index);
         activeSliderBtn(index);
     }
 }
@@ -70,11 +70,11 @@ const adventisingNext = () => {
 const adventisingPrev = () => {
     if(index == 0) {
         index = advertisingImg.length - 1;
-        activeAdvertising(index);
+        // activeAdvertising(index);
         activeSliderBtn(index);
     } else {
         index--;
-        activeAdvertising(index);
+        // activeAdvertising(index);
         activeSliderBtn(index);
     }
 }
