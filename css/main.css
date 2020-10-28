@@ -580,7 +580,7 @@ body{
     position:fixed;
     top:0px;
     z-index: 7;
-    
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -691,6 +691,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    right: 0;
 }
 .thanks_back-call .thanks_content{  
     padding:10px;
@@ -892,9 +893,6 @@ body{
         height: 20px;
     }
 
-    .popup-menu_list {
-
-    }
 
     .popup-menu_link {
         font-family: Comfortaa;
@@ -1137,6 +1135,23 @@ body{
 
     .header-nav {
         padding: 0 47px;
+    }
+
+    .thanks_back-call .thanks_content {
+        width: 674px;
+    }
+
+    .order_input {
+        width: 400px;
+    }
+
+    .order_title {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        color: #000000;
     }
 }
 

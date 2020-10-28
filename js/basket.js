@@ -29,7 +29,6 @@ function closeDispatch () {
 // Events
 btnDispatchFormLink.addEventListener('click', openForm)
 orderBtn.addEventListener('click', closeForm)
-orderPopup.addEventListener('click', closeForm)
 orderCheckbox.addEventListener('click', openDispatch)
 thanksBackCall.addEventListener('click', closeDispatch)
 thanksClose.addEventListener('click', closeDispatch)
