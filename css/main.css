@@ -812,6 +812,10 @@ body{
     .title {
         margin-top: 150px;
     }
+
+    .category_img {
+        width: 193px;
+    }
 }
 
 @media(max-width:940px) {
