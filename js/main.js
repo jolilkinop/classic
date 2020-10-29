@@ -101,7 +101,6 @@ const activeSlideReview = ir => {
     for(irn of ir){
         reviewClientsImg[irn].classList.add('active');
     }
-    console.log(ir);
     reviewClientsImg[ir[0]].classList.add('img-one');
     reviewClientsImg[ir[1]].classList.add('img-two');
     reviewClientsImg[ir[2]].classList.add('img-fhree');
@@ -139,8 +138,6 @@ const slideReviewPrev = () => {
         activeSlideReview(indexReview);
     }
 }
-
-
 
 adventisingSliderBtns.forEach((item, indexSlBtn) => {
     item.addEventListener('click', () => {
