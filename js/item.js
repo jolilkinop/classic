@@ -1,8 +1,9 @@
+// Elements
 const itemCardSizeBtn = document.querySelectorAll(".item-card_size-btn");
 const itemCardImg = document.querySelectorAll(".item-card_img");
 const popupImg = document.querySelector(".popup-img");
 
-
+// Function
 const activeBtn = () => {
     itemCardSizeBtn.forEach( item => {
         item.addEventListener('click', () => {
@@ -45,7 +46,7 @@ const imageBold = () => {
 };
 
 
-
+// Events
 activeBtn();
 imageBold();
 

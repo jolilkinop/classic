@@ -410,15 +410,45 @@ body{
     top: 60%;
 }
 
-.rewiew-clients_img {
+.review-clients_img-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 34px;
+    justify-content: center;
+}
+
+.review-clients_img {
+    display: none;
     z-index: 4;
-    width: 70%;
+    width: 248px;
+    height: 442px;
+}
+
+.img-one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.img-two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.img-fhree {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.img-foru {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
 }
 
 .review-clients_background {
     position: absolute;
     top: 55px;
-    width: 80%;
+    width: 92%;
     height: 90%;
 }
 

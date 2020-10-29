@@ -1,9 +1,12 @@
+// Elements
 const slederItem = document.querySelectorAll(".sleder_item");
 const sliderBtnRight = document.querySelector(".slider_btn-right");
 const sliderBtnLeft = document.querySelector(".slider_btn-left");
 
 index = 0;
 
+
+// Function
 const activeSlederItem = ind => {
     for(sledItems of slederItem) {
         sledItems.classList.remove('sleder_item_active');
@@ -31,6 +34,6 @@ const slederItemPrev = () => {
     }
 }
 
-
+// Events
 sliderBtnRight.addEventListener('click', slederItemNext);
 sliderBtnLeft.addEventListener('click', slederItemPrev);

@@ -1,3 +1,4 @@
+// Elements
 const btnDispatchFormLink = document.querySelector(".btn-dispatch_form-link");
 const order = document.querySelector(".order");
 const orderPopup = document.querySelector(".order_popup");

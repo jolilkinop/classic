@@ -1,3 +1,4 @@
+// Elements
 const headerNavBurger = document.querySelector(".header-nav_burger");
 const bellButton = document.querySelector(".bell_button");
 const popupContainer = document.querySelector(".popup-container");
@@ -11,6 +12,10 @@ const adventisingLeft = document.querySelector(".adventising_left");
 const adventisingRight = document.querySelector(".adventising_right");
 const advertisingImg = document.querySelectorAll(".advertising_img");
 const adventisingSliderBtns = document.querySelectorAll(".adventising_slider-btn");
+const reviewClientsButtonRight = document.querySelector(".review-clients_button-right");
+const reviewClientsButtonLeft = document.querySelector(".review-clients_button-left");
+const reviewClientsImg = document.querySelectorAll(".review-clients_img");
+
 
 // Function
 function openMenu () {
@@ -41,7 +46,6 @@ function closeDispatchForm () {
 index = 0;
 
 const activeAdvertising = n => {
-    console.log(n);
     for(advImg of advertisingImg) {
         advImg.classList.remove('active');
     }
@@ -83,6 +87,61 @@ const clearInt = () => {
     clearInterval(interval)
 }
 
+// Slider review
+indexReview = [0, 1, 2, 3];
+
+const activeSlideReview = ir => {
+    for(reviewImg of reviewClientsImg){
+        reviewImg.classList.remove('active');
+        reviewImg.classList.remove('img-one');
+        reviewImg.classList.remove('img-two');
+        reviewImg.classList.remove('img-fhree');
+        reviewImg.classList.remove('img-foru');
+    }
+    for(irn of ir){
+        reviewClientsImg[irn].classList.add('active');
+    }
+    console.log(ir);
+    reviewClientsImg[ir[0]].classList.add('img-one');
+    reviewClientsImg[ir[1]].classList.add('img-two');
+    reviewClientsImg[ir[2]].classList.add('img-fhree');
+    reviewClientsImg[ir[3]].classList.add('img-foru');
+}
+
+const slideReviewNext = () => {
+    if(indexReview[indexReview.length - 1] == reviewClientsImg.length - 1) {
+        indexReview.shift();
+        indexReview.push(0);
+        activeSlideReview(indexReview);
+    } else if(indexReview[indexReview.length - 1] == 0 || indexReview[indexReview.length - 1] > 0 && indexReview[indexReview.length - 1] !== reviewClientsImg.length - 1) {
+        indexReview.shift();
+        indexReview.push(indexReview[indexReview.length - 1] + 1);
+        activeSlideReview(indexReview);
+    } else {
+        indexReview.shift();
+        indexReview.push(indexReview[indexReview.length - 1] + 1);
+        activeSlideReview(indexReview);
+    }
+}
+
+const slideReviewPrev = () => {
+    if(indexReview[0] == 0) {
+        indexReview.pop();
+        indexReview.unshift(indexReview.length);
+        activeSlideReview(indexReview);
+    } else if(indexReview[0] == indexReview.length - 1 || indexReview[0] > 0 && indexReview[indexReview.length - 1] !== reviewClientsImg.length - 1) {
+        indexReview.pop();
+        indexReview.unshift(indexReview[0] - 1);
+        activeSlideReview(indexReview);
+    } else {
+        indexReview.pop();
+        indexReview.unshift(indexReview[0] - 1);
+        activeSlideReview(indexReview);
+    }
+}
+
+
+
 adventisingSliderBtns.forEach((item, indexSlBtn) => {
     item.addEventListener('click', () => {
         index = indexSlBtn;
@@ -92,7 +151,8 @@ adventisingSliderBtns.forEach((item, indexSlBtn) => {
     })
 })
 
-const interval = setInterval(adventisingNext, 4500)
+const interval = setInterval(adventisingNext, 3500);
+const intervalRewiew = setInterval(slideReviewNext, 3500);
 
 
 
@@ -108,3 +168,5 @@ adventisingLeft.addEventListener('click', adventisingPrev)
 adventisingLeft.addEventListener('click', clearInt)
 adventisingRight.addEventListener('click', adventisingNext)
 adventisingRight.addEventListener('click', clearInt)
+reviewClientsButtonRight.addEventListener('click', slideReviewNext)
+reviewClientsButtonLeft.addEventListener('click', slideReviewPrev)
