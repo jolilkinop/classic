@@ -231,6 +231,7 @@ body{
     grid-template: 100% / repeat(5, 1fr);
     grid-column-gap: 97px;
     justify-content: center;
+    margin-top: 77px;
 }
 
 .category-bottom {
@@ -753,7 +754,7 @@ body{
 
 @media(max-width: 1366px) {
     .wrap {
-        width: 90vw;
+        width: 100vw;
         max-width: 1380px;
         margin: 0 auto;
     }
@@ -876,9 +877,7 @@ body{
 }
 
 @media(max-width:780px) {
-    .wrap {
-        width: 100%;
-    }
+
 
     /* header */
     .logo {
@@ -1143,8 +1142,9 @@ body{
     /* Review end */
 
     /* Footer start */
-    .contacts {
-        margin-top: 684px;
+    .popup-menu_close {
+        right: 0;
+        top: 0;
     }
 
     .contacts_email {
@@ -1175,21 +1175,31 @@ body{
     }
 }
 
-@media(max-width: 580px) {
-    .contacts {
-        margin-top: 550px;
+@media(max-width: 450px) {
+    .back-call_content {
+        width: 80%;
     }
-}
 
-@media(max-width: 480px) {
-    .contacts {
-        margin-top: 500px;
+    .back-call_text {
+        font-size: 18px;
+    }
+
+    .back-call_mobil {
+        font-size: 18px;
+    }
+
+    .header-nav {
+        padding: 20px;
     }
 }
 
 @media(max-width: 320px) {
-    .contacts {
-        margin-top: 400px;
+    .product-client_img {
+        margin-left: 0;
+    }
+
+    .menu-nav {
+        margin-left: 0;
     }
 
     .adventising_image {
@@ -1198,7 +1208,7 @@ body{
     }
 
     .header-nav {
-        padding: 0 47px;
+    padding: 0;
     }
 
     .thanks_back-call .thanks_content {
